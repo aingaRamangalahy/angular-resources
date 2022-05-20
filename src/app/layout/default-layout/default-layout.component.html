@@ -1,0 +1,14 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav opened mode="side">
+    <h1 class="app-name">Angular Resources</h1>
+    <div class="nav-list-container">
+      <mat-list>
+        <mat-list-item *ngFor="let nav of navList">
+          <a mat-line >{{nav}}</a>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav opened mode="side" position="end">news feed!</mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
